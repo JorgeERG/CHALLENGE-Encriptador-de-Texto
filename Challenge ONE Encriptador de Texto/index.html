@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- -------------------------------------------------------- -->
+    <header>
+        <div class="header-titulo">
+            <p>Encriptador de texto</p>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------- -->
+    <div id="fondo">
+        <div class="grid-contenedor">
+            <div class="grid-item">
+                <p class="text">TEXTO A ENCRIPTAR</p>
+                <div id="input">
+                    <textarea name="" id="textarea-encriptacion" 
+                cols="50" rows="30" required>gay</textarea>
+                </div>
+            </div>
+    
+            
+            <div class="grid-item">
+                <div class="grid-contenedor-2">
+                    <button onclick="encriptar()" class="boton">Encriptar</button>
+                    <button onclick="copiar()" class="boton">Copiar al portapapeles</button>
+                    <button onclick="desencriptar()" class="boton">Desencriptar</button>
+                </div>
+            </div>
+    
+    
+            <div class="grid-item">
+                <p class="text">RESULTADO</p>
+                <div id="output">
+                    <!-- <pre id="resultado-encriptacion">gay</pre> -->
+                    <textarea name="" id="resultado-encriptacion" 
+                cols="50" rows="30" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------- -->
+    <footer>
+        <div class="pie-pagina">
+            <p>@Creado por Jorge Eleazar Rodriguez Garcia para ONE</p>
+        </div>
+    </footer>
+    <!-- -------------------------------------------------------- -->
+    <script src="app.js"></script>
+</body>
+
+</html>
